@@ -1,0 +1,183 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/background\ cart.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 64px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &__content{
+        grid-column: span 8;
+    }
+
+    &__name-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        padding-right: 71px - 46px;
+    }
+
+    &__name{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        margin-bottom: 32px;
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 32px;     
+    }
+
+    &__info{
+        width: 276px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+
+        &-name{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+    
+        &-description{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+        }
+    
+        &-price{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #050505;
+        }
+    
+        &-link-box{
+            display: flex;
+            gap: 30px;
+        }
+    
+        &-link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 210%;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+            @include underline-black_hover;
+        }
+    }
+
+    &__input{
+    width: 71px;
+    height: 51px;
+    text-align: center;
+    background: #F7F6F6;
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 210%;
+    }
+
+    &__button-box{
+
+    }
+
+    &__button{
+        border: 1px solid #000000;
+        border-radius: 20px;
+        height: 36px;
+        width: 200px;
+        background-color: #fff;
+        @include button-black_hover;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column: span 4;
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+
+        &-title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            padding-top: 42px;
+            padding-bottom: 35px;
+        }
+
+        &-input{
+            width: 288px;
+            border: none;
+            border-bottom: 1px solid #CACDD8;
+            background: #F7F6F6;
+            margin-bottom: 41px;
+        }
+
+        &-price{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            padding-top: 23px;
+            padding-bottom: 20px;
+        }
+
+        &-button{
+            border: 1px solid #000000;
+            border-radius: 20px;
+            height: 41px;
+            width: 288px;
+            background-color: #F7F6F6;
+            @include button-black_hover;
+            animation: buy-button_vibrate 4s linear infinite both;
+        }
+    }
+}
+
+    

@@ -1,0 +1,233 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header{
+        padding-top: 32px;
+        border-bottom: none;
+        align-items: baseline;
+    }
+
+    .logo{
+        &__img{
+            width: 99px;
+        }
+    }
+
+    .mob{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .header__input {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__title{
+        font-size: 48px;
+        line-height: 59px;
+        padding-top: 29px;
+        text-align: center;
+    }
+
+    .main__text{
+        font-size: 16px;
+    }
+
+    .link__catalog{
+        font-size: 14px;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 32px;
+    }
+
+    .for{
+        &__content{
+            gap: 16px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+         &__item{
+            grid-column: span 4;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+
+            &-big{
+                height: 244px;
+            }
+         }
+    }
+
+    .product{
+        &__content{
+            row-gap: 36px;
+        }
+
+        &__name{
+            font-size: 18px;
+            line-height: 22px;
+            padding-top: 9px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .description{
+        padding-bottom: 8px;
+    }
+
+    .price{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .sale{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .link-box{
+        margin-top: 36px;
+        margin-bottom: 32px;
+    }
+
+    .footer{
+        padding-bottom: 32px;
+
+        &__content{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__info{
+            gap: 100px;
+        }
+
+        &__form{
+            margin-top: 34px;
+        }
+    }
+
+    .subscription{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .form{
+        &__email{
+            width: 268px;
+        }
+    }
+
+    .button{
+        font-size: 14px;
+        line-height: 17px;
+        width: 268px;
+    }
+
+    /*Стили каталога*/
+
+    .top__catalog{
+        margin-bottom: 32px;
+    }
+
+    .main__subtitle{
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    .catalog{
+        &-link{
+            font-size: 14px;
+            &:not(:last-child)::after {
+                font-size: 14px;
+            }
+        }
+    
+        &-header{
+            flex-wrap: wrap;
+            row-gap: 16px;
+        }
+    }
+
+    .filter{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    /*Стили корзины*/
+
+    .cart{
+
+        &__name{
+            display: none;
+
+            &-box{
+                padding-bottom: 28px;
+            }
+        }
+
+        &__item{
+            padding-top: 18px;
+            margin-bottom: 24px;
+        }
+
+        &__product-img{
+            display: none;
+        }
+
+        &__info{
+            gap: unset;
+
+            &-name{
+                font-size: 18px;
+                line-height: 22px;
+                padding-bottom: 8px;
+            }
+
+            &-description{
+                font-size: 12px;
+                line-height: 15px;
+                padding-bottom: 15px;
+            }
+
+            &-price{
+                font-size: 12px;
+                line-height: 15px;
+                padding-bottom: 15px;
+            }
+        }
+
+        &__button{
+            width: 163px;
+            grid-column: span 2;
+
+            &-box{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 16px;
+            }
+        }
+
+        &__form{
+            grid-column: span 12;
+            margin-bottom: 16px;
+        }
+    }
+
+}
